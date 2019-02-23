@@ -8,7 +8,7 @@ The original script on the Fling page did not offer an easy way to add uplinks t
 
 1. Install fling [USB Network Native Driver for ESXi
 ](https://labs.vmware.com/flings/usb-network-native-driver-for-esxi#instructions) as instructed (ignore the script part on linked page)
-2. Copy content from script [`script.sh`](script.sh)
+2. Copy content from script [`vusb.sh`](vusb.sh)
 3. Add script right above `exit 0` in `/etc/rc.local.d/local.sh` on your VMware ESXi hypervisor
 4. Add `vusbnic_setup` commands to modify the vSwitches/portgroups based on your needs.
 
