@@ -1,4 +1,5 @@
 #!/bin/sh
+# ^^^ Remove this line above when copying the content in `local.sh` on your ESXi
 
 vusbnic_setup()
 {
