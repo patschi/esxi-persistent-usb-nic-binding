@@ -40,6 +40,11 @@ vusbnic_setup vusb2 vSwitch2 M-ServerB
 exit 0
 ```
 
+Note: ESXi v.7 by default set the name of the management network to Management Network with a space. To allow spaces in portgroup names use the following example syntax:
+```shell
+vusbnic_setup vusb0 vSwitch0 'Management Network'
+```
+
 ## Examples
 
 **Specify multiple vusb devices with same vSwitch and portgroups**
