@@ -27,7 +27,7 @@ vusbnic_setup()
                 portgroup="${portgroups%%,*}" # get current portgroup to add
                 portgroups="${portgroups#*,}" # cut off current portgroup from string
                 echo "  Adding portgroup $portgroup..."
-                esxcfg-vswitch -M $vusb_dev -p $portgroup $vswitch # add portgroup to vswitch
+                esxcfg-vswitch -M $vusb_dev -p "$portgroup" $vswitch # add portgroup to vswitch
             done
         fi
     done
